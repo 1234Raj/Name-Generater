@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(129, 46, 201);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+ 
+
+.input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+      
+}
+.input #users{
+     
+    width: 25%;
+    height: 35px;
+    border-radius: 6px;
+    border: none;
+}
+.Names{
+     
+   text-align: center;
+   color: #fff;
+}

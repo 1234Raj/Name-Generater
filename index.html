@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="input">
+    <h1>Generate Your Name</h1>
+    <input type="text" id="users" placeholder="    Search" onkeyup="GetNames()" >
+</div>
+    <div class="Names" id="div">
+    <p id="demo1 demo"></p>
+    <p id="demo2 demo"></p>
+    <p id="demo3 demo"></p>
+    <p id="demo4 demo"></p>
+    <p id="demo5 demo"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+</div>
+    <script>
+
+        
+
+         
+
+// function checkedName(key){
+
+//       return key == document.getElementById("Names").value ;}
+//  function checkedName(Name){
+
+//        return Name == document.getElementById("Names").value ;
+      
+//  }
+
+ function GetNames(){
+    const Names = {
+            	 	 
+            'A':["Aagney","Aarish","Aaditey","Aanan","Aadit"],
+            'B':["Bankim","Bahar","Bhaswan","Bhadrak","Bhadresh","Baneet"],
+             'C':["Charlotte","Carter","Camila","Chloe","Charles","Caleb","Christopher","Cameron","Clooper","Christian","Colton","Charlie","Carson","Connor","Claire" ],
+            'D':['Dailen', 'Dailey','Daily','Daimen','Dain','Daina','Daine','Dainel','Daire','Dairus','Daiton','Daived','Daivid','Daivyd','Dakairi','Dakar','Dakara','Dakarai'],
+             'E': ['Ekansh', 'Elish', 'Earl', 'Eva', 'Emma', 'Eshan', 'Ethan', 'Ezra'],
+             'F': ['Faizan', 'Fabio', 'Farah', 'Faisal', 'Farhan', 'Francis', 'Fanish'],
+             'G': ['Gagan', 'Ganga', 'Gael', 'Gabel', 'Gopal', 'Gorakh', 'Gabby', 'Gulsh'],
+             'H': ['Harshal', 'Harsh', 'Hemraj', 'Hans', 'Hardik', 'Hari', 'Harry', 'Harsh'],
+             'I': ['Issac', 'Idris', 'Ian', 'Ivy', 'Isha', 'Ishan', 'Isaih', 'Ivan'],
+             'j': ['Jay', 'Janvant', 'Jayesh', 'Jordan', 'Jacob', 'Jagan', 'Jyoti', 'John'],
+             'K': ['Kartik', 'Kamal', 'Kishor', 'Kaden', 'Kal', 'Kabir', 'Kiran', 'Kadani'],
+             'L': ['Lakshya', 'Lalit', 'Lokesh', 'Landry', 'Leon', 'Lakshman', 'Levi'],
+             'M': ['Mohan', 'Manoj', 'Maruti', 'Mena', 'Megha', 'Mehek', 'Magan', 'Madan'],
+             'N': ['Neeraj', 'Neeti', 'Nitin', 'Naman', 'Nihal', 'Neel', 'Nakul', 'Neili'], 
+             'O': ['Omar', 'Om', 'Orion', 'Ojas', 'Ohas', 'Oma', 'Obalesh', 'Ojal'],
+             'P': ['Pankaj', 'Poornima', 'Payal', 'Pawan', 'Pooja', 'Pushpa', 'Pitambar'],
+             'Q': ['Quinn', 'Qamar', 'Quentin', 'Qutab', 'Qadir', 'Quin', 'Quinian'], 
+             'R': ['Rahul', 'Ram', 'Radhe', 'Raj', 'Raghu', 'Raghav', 'Raman', 'Rituraj'] 
+        };
+
+
+     var Name = document.getElementById('users').value;
+      for (const [key, value] of Object.entries (Names)){
+
+if (key == Name){
+const Values = value; 
+let res = [];
+
+function getRandom(list){
+  res = [];
+for (let i = 1; i <= 5; i++) 
+{
+const randm= Math.floor(Math.random() * list.length);
+res.push(list[randm]); 
+}
+}
+getRandom(Values);
+ document.getElementById('demo1').innerHTML = res[0]; 
+ 
+ document.getElementById('demo2').innerHTML = res[1];
+ 
+ document.getElementById('demo3').innerHTML = res[2];
+ document.getElementById('demo4').innerHTML = res[3];
+ document.getElementById('demo5').innerHTML = res[4];
+//  document.getElementById('demo6').innerHTML = res[5];
+//  document.getElementById('demo7').innerHTML = res[6];
+//  document.getElementById('demo8').innerHTML = res[7];
+ 
+}
+}
+}
+
+    
+</script>
+</body>
+</html>
+
+
+
+
+ 
